@@ -107,8 +107,24 @@ table {
   background-color: var(--color-bg-card-grey-900);
   place-items: center;
 }
+/*Contenedor (card)*/
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-font-second-grey-800);
+  width: 20.625rem;
+  height: auto;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+}
+
+/*
+
+
+*/
 
 /*git add .
-git commit -m "Se adicionaron los estilos del main-container"
+git commit -m "Se le da estilo a la profile-card"
 git push origin main 
 */
