@@ -114,17 +114,56 @@ table {
   flex-direction: column;
   background-color: var(--color-font-second-grey-800);
   width: 20.625rem;
-  height: auto;
-  padding: 2rem 1.5rem;
+  padding: var(--space-card-300) var(--space-card-250);
   border-radius: 1rem;
+}
+
+/* Estilos Header*/
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.7rem;
+  background-color: blue;
+}
+/*Estilos contenedor del avatar*/
+.profile-avatar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: var(--space-card-150);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
+}
+
+/*Estilos del Avatar*/
+.profile-avatar .profile-avatar-img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  max-width: 100%;
 }
 
 /*
 
 
+
 */
 
 /*git add .
-git commit -m "Se le da estilo a la profile-card"
+git commit -m "Se le da estilo al contenedor del avatar y al avatar"
 git push origin main 
 */
