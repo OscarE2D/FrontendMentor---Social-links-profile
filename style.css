@@ -1,0 +1,84 @@
+/*Importación*/
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+  font-weight: 400 600 700;
+  font-style: normal;
+}
+
+/*Reset Inicial*/
+/*El modelo de caja moderno comienza en la raíz*/
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-size: clamp(1rem 0.964rem + 0.18vh 1.125rem);
+}
+
+/*Heredan del modelo de caja todos los elementos*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/*Ajustes generales del body*/
+
+body {
+  font-family: "Inter" sans-serif;
+  font-weight: 300;
+  background-color: white;
+  color: black;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Imágenes y medios fluidos*/
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Formularios sin estilos raros*/
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/*Enlaces sin subrayado ni color azul*/
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sin bullets*/
+
+ul,
+ol {
+  list-style: none;
+}
+
+/*tablas limpias*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
