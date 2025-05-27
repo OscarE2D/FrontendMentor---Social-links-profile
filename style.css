@@ -82,3 +82,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+:root {
+  --color-hover-green: hsl(75, 94%, 57%);
+  --color-font-main-white: hsl(0, 0%, 100%);
+
+  --color-links-grey-700: hsl(0, 0%, 20%);
+  --color-font-second-grey-800: hsl(0, 0%, 12%);
+  --color-bg-card-grey-900: hsl(0, 0%, 8%);
+
+  --space-card-50: 0.375rem /*6px */;
+  --space-card-100: 0.75rem /*12px*/;
+  --space-card-150: 1rem /*16*/;
+  --space-card-200: 1.25rem /*20px*/;
+  --space-card-250: 1.5rem /*24px*/;
+  --space-card-300: 2rem /*32px*/;
+}
