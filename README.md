@@ -64,6 +64,7 @@ Typography was implemented using the Inter font family, and I ensured consistent
 ### Screenshot
 
 ![](./design/screenshot.png)
+
 This screenshot shows the desktop version of the card. The design adapts seamlessly to smaller screens, maintaining visual clarity and accessibility.
 
 ### Links
