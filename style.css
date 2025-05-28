@@ -96,17 +96,18 @@ table {
   --space-card-150: 1rem /*16*/;
   --space-card-200: 1.25rem /*20px*/;
   --space-card-250: 1.5rem /*24px*/;
-  --space-card-300: 1.875rem /*18px*/;
+  --space-card-300: 1.875rem /*30x*/;
   --space-card-350: 2rem /*32px*/;
 }
 
 /*General background of the page*/
 .main-container {
   display: grid;
-  grid-template-rows: 1fr 3rem;
+  grid-template-rows: 1fr 2rem;
   height: 100vh;
   background-color: var(--color-bg-card-grey-900);
   place-items: center;
+  padding: 3rem 2rem;
 }
 /*Contenedor (card)*/
 
@@ -114,11 +115,13 @@ table {
   display: flex;
   flex-direction: column;
   background-color: var(--color-font-second-grey-800);
+  width: 100%;
   max-width: 22.188rem;
-  min-width: 20rem;
-  padding: var(--space-card-300) var(--space-card-250);
+  min-width: 15.625rem;
+  padding: var(--space-card-250);
   border-radius: 1rem;
-  margin: 0 1.5rem;
+  margin: 0 5rem;
+  margin-bottom: 1rem;
 }
 
 /* Estilos Header*/
@@ -179,6 +182,7 @@ table {
   font-size: clamp(0.625rem, 0.555rem + 0.357vw, 0.875rem);
   text-align: center;
 }
+
 /*Estilos del contenido de la biografía*/
 .profile-bio {
   margin-bottom: var(--space-card-250);
@@ -190,12 +194,60 @@ table {
   font-size: clamp(0.625rem, 0.555rem + 0.357vw, 0.875rem);
   text-align: center;
 }
-/*
 
+/*Estilos de los enlaces*/
 
-*/
+.social-links li {
+  margin-bottom: 0.7rem;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-links-grey-700);
+  color: var(--color-font-main-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.625rem, 0.555rem + 0.357vw, 0.875rem);
+  width: 100%;
+  height: 2.5rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.social-links a:hover,
+.social-links a:focus {
+  background-color: var(--color-hover-green);
+  color: var(--color-font-second-grey-800);
+}
+
+/*Estilos del footer*/
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-font-main-white);
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-bg-card-grey-900);
+}
+.attribution a {
+  color: var(--color-hover-green);
+  transition: color 0.3s ease;
+}
+
+.attribution a:hover {
+  color: rgb(248, 243, 43);
+}
 
 /*git add .
-git commit -m "Se estilizan el contenido de la biografía"
+git commit -m "Se le dio estilos a todos los enlaces y el footer"
 git push origin main 
 */
