@@ -12,7 +12,7 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-size: clamp(1rem 0.964rem + 0.18vh 1.125rem);
+  font-size: 16px;
 }
 
 /*Heredan del modelo de caja todos los elementos*/
@@ -28,7 +28,7 @@ html {
 /*Ajustes generales del body*/
 
 body {
-  font-family: "Inter" sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 300;
   background-color: white;
   color: black;
@@ -96,7 +96,8 @@ table {
   --space-card-150: 1rem /*16*/;
   --space-card-200: 1.25rem /*20px*/;
   --space-card-250: 1.5rem /*24px*/;
-  --space-card-300: 2rem /*32px*/;
+  --space-card-300: 1.875rem /*18px*/;
+  --space-card-350: 2rem /*32px*/;
 }
 
 /*General background of the page*/
@@ -113,9 +114,11 @@ table {
   display: flex;
   flex-direction: column;
   background-color: var(--color-font-second-grey-800);
-  width: 20.625rem;
+  max-width: 22.188rem;
+  min-width: 20rem;
   padding: var(--space-card-300) var(--space-card-250);
   border-radius: 1rem;
+  margin: 0 1.5rem;
 }
 
 /* Estilos Header*/
@@ -126,7 +129,6 @@ table {
   justify-content: center;
   align-items: center;
   padding: 0.7rem;
-  background-color: blue;
 }
 /*Estilos contenedor del avatar*/
 .profile-avatar {
@@ -135,7 +137,7 @@ table {
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-bottom: var(--space-card-150);
+  margin-bottom: var(--space-card-300);
 }
 
 .visually-hidden {
@@ -151,19 +153,35 @@ table {
 
 /*Estilos del Avatar*/
 .profile-avatar .profile-avatar-img {
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5em;
   border-radius: 50%;
   max-width: 100%;
 }
 
-/*
+/*Estilos del titulo: Nombre: “Jessica Randall”*/
+.profile-header .profile-name {
+  color: var(--color-font-main-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.125rem, 0.54vw + 1.018125rem, 1.5rem);
+  margin-bottom: var(--space-card-50);
+}
 
+/*Estilos del subtitulo: Ubicación: “London, United Kingdom”*/
+
+.profile-header .profile-location {
+  color: var(--color-hover-green);
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: clamp(0.625rem, 0.555rem + 0.357vw, 0.875rem);
+}
+/*
 
 
 */
 
 /*git add .
-git commit -m "Se le da estilo al contenedor del avatar y al avatar"
+git commit -m "Se estilizan el nombre y la ubicación del header"
 git push origin main 
 */
