@@ -129,6 +129,7 @@ table {
   justify-content: center;
   align-items: center;
   padding: 0.7rem;
+  margin-bottom: 1.125rem;
 }
 /*Estilos contenedor del avatar*/
 .profile-avatar {
@@ -153,10 +154,11 @@ table {
 
 /*Estilos del Avatar*/
 .profile-avatar .profile-avatar-img {
+  display: block;
+  height: 5rem;
   width: 5rem;
-  height: 5em;
   border-radius: 50%;
-  max-width: 100%;
+  object-fit: cover;
 }
 
 /*Estilos del titulo: Nombre: “Jessica Randall”*/
@@ -175,6 +177,18 @@ table {
   font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: clamp(0.625rem, 0.555rem + 0.357vw, 0.875rem);
+  text-align: center;
+}
+/*Estilos del contenido de la biografía*/
+.profile-bio {
+  margin-bottom: var(--space-card-250);
+}
+.profile-bio .profile-bio-p {
+  color: var(--color-font-main-white);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.625rem, 0.555rem + 0.357vw, 0.875rem);
+  text-align: center;
 }
 /*
 
@@ -182,6 +196,6 @@ table {
 */
 
 /*git add .
-git commit -m "Se estilizan el nombre y la ubicación del header"
+git commit -m "Se estilizan el contenido de la biografía"
 git push origin main 
 */
